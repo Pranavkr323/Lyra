@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # Set your API key
-genai.configure(api_key="AIzaSyCfytWNFu-FgbJacY9F9ya0kaJ0-xn3D_M")
+genai.configure(api_key="")
 
 # Initialize the model
 model = genai.GenerativeModel(
