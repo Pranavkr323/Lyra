@@ -123,7 +123,7 @@ def processcommand(c):
             speak("Please tell me the what to play.")
 
     elif "news" in c.lower():
-        r = requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=2fe926ed7b2740dca00da3d169baa085")
+        r = requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=NEWS_API")
         if r.status_code == 200:
             data = r.json()  # Parse JSON response
             articles = data.get("articles", [])  # Get list of articles
